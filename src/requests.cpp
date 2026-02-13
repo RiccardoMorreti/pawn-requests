@@ -19,38 +19,6 @@ extern "C" AMX_NATIVE_INFO amx_Natives[] = {
     {"JsonWebSocketClient", Natives::JsonWebSocketClient},
     {"JsonWebSocketSend", Natives::JsonWebSocketSend},
 
-    {"JsonParse", Natives::JSON::Parse},
-    {"JsonStringify", Natives::JSON::Stringify},
-    {"JsonNodeType", Natives::JSON::NodeType},
-    {"JsonObject", Natives::JSON::Object},
-    {"JsonInt", Natives::JSON::Int},
-    {"JsonFloat", Natives::JSON::Float},
-    {"JsonBool", Natives::JSON::Bool},
-    {"JsonString", Natives::JSON::String},
-    {"JsonArray", Natives::JSON::Array},
-    {"JsonAppend", Natives::JSON::Append},
-    {"JsonSetObject", Natives::JSON::SetObject},
-    {"JsonSetInt", Natives::JSON::SetInt},
-    {"JsonSetFloat", Natives::JSON::SetFloat},
-    {"JsonSetBool", Natives::JSON::SetBool},
-    {"JsonSetString", Natives::JSON::SetString},
-    {"JsonGetObject", Natives::JSON::GetObjectAlt}, // renamed due to a msvc macro interfering
-    {"JsonGetInt", Natives::JSON::GetInt},
-    {"JsonGetFloat", Natives::JSON::GetFloat},
-    {"JsonGetBool", Natives::JSON::GetBool},
-    {"JsonGetString", Natives::JSON::GetString},
-    {"JsonGetArray", Natives::JSON::GetArray},
-    {"JsonArrayLength", Natives::JSON::ArrayLength},
-    {"JsonArrayObject", Natives::JSON::ArrayObject},
-
-    {"JsonGetNodeInt", Natives::JSON::GetNodeInt},
-    {"JsonGetNodeFloat", Natives::JSON::GetNodeFloat},
-    {"JsonGetNodeBool", Natives::JSON::GetNodeBool},
-    {"JsonGetNodeString", Natives::JSON::GetNodeString},
-
-    {"JsonToggleGC", Natives::JSON::ToggleGC},
-    {"JsonCleanup", Natives::JSON::Cleanup},
-
     {0, 0}};
 
 std::set<AMX *> amx_List;
